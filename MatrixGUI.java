@@ -17,7 +17,6 @@ public class MatrixGUI extends JFrame implements ActionListener {
         setSize(800, 600);
         setLayout(new BorderLayout(10,10));
 
-        // 🔹 Top Panel
         JPanel top = new JPanel();
         top.add(new JLabel("Rows:"));
         rowsField = new JTextField(5);
@@ -33,7 +32,6 @@ public class MatrixGUI extends JFrame implements ActionListener {
 
         add(top, BorderLayout.NORTH);
 
-        // 🔹 Center Panel
         JPanel center = new JPanel(new GridLayout(1,3,10,10));
 
         matrixPanelA = new JPanel();
@@ -50,7 +48,6 @@ public class MatrixGUI extends JFrame implements ActionListener {
 
         add(center, BorderLayout.CENTER);
 
-        // 🔹 Bottom Panel
         JPanel bottom = new JPanel();
 
         addBtn = new JButton("Add");
